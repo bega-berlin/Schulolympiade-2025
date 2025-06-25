@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: schulolympiade_mysql
+    restart: always
+    ports:
+      - "192.168.100.73:3308:3306"  # Externe IP:Port -> Container Port
+    environment:
+      MYSQL_ROOT_PASSWORD: ong2025secure
+      MYSQL_DATABASE: schulolympiade
+      MYSQL_USER: olympiade_user
+      MYSQL_PASSWORD: olympiade2025
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - olympiade_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: schulolympiade_phpmyadmin
+    restart: always
+    ports:
+      - "192.168.100.73:8080:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    networks:
+      - olympiade_network
+    depends_on:
+      - mysql
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: cloudbeaver
+    ports:
+      - "8081:8978"
+    volumes:
+      - cloudbeaver-data:/opt/cloudbeaver/workspace
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  cloudbeaver-data:
+networks:
+  olympiade_network:
+    driver: bridge
