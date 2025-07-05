@@ -18,6 +18,26 @@ services:
     networks:
       - olympiade_network
 
+  mysql_backup:
+    image: fradelg/mysql-cron-backup
+    container_name: mysql_backup
+    restart: always
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=3306
+      - MYSQL_USER=olympiade_user
+      - MYSQL_PASS=olympiade2025
+      - MYSQL_DB=schulolympiade
+      - CRON_TIME=*/10 * * * *     # Alle 10 Minuten
+      - MAX_BACKUPS=10            # Mehr Backups behalten, z. B. für 1–2 Tage
+      - TZ=Europe/Berlin
+    volumes:
+      - ./mysql-backups:/backup
+    depends_on:
+      - mysql
+    networks:
+      - olympiade_network
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: schulolympiade_phpmyadmin
