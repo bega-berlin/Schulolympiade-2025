@@ -14,7 +14,7 @@ const dbConfig = {
 };
 
 // Connection Pool erstellen
-const pool = mysql.createPool(dbConfig);
+const pool = mysql.createPool(dbConfig); //Kann Verbindungen wiederverwenden? -> Überprüfen noch
 
 // Test-Funktion für Datenbankverbindung
 async function testConnection() {
@@ -27,6 +27,6 @@ async function testConnection() {
         console.error('❌ Datenbankverbindung fehlgeschlagen:', error.message);
         return false;
     }
-}
+} //Datenbank Verbindung testen -> Funktion überprüfen -> Funktioniert👍
 
-module.exports = { pool, testConnection };
+module.exports = { pool, testConnection }; //Pool und Testfunktion für die anderen Sachen exportieren

@@ -2,14 +2,14 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const { pool, testConnection } = require('../shared/db');
+const { pool, testConnection } = require('../shared/db'); // Datenbankverbindung aus db.js
 
 const app = express();
-const PORT = 3000;
+const PORT = 3000; // Port für Dashboard -> Todo: Alle Ports der Services hochzählend ab 3000 stellen
 
-// Middleware
-app.use(express.static('public'));
-app.use(express.json());
+
+app.use(express.static('public')); // Statisches Zeug für index.html und Bilder und so
+app.use(express.json()); // Er ist nur für Post Anfragen also brauchen wir nicht. Ich lass trotzdem mal drin weil jetzt aktell alles Läuft und ich nichts riskieren will
 
 // CORS
 const allowedOrigins = ['http://localhost', 'http://localhost:3000'];
