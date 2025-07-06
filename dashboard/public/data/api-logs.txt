@@ -3776,3 +3776,480 @@
 [2025-07-05T14:28:55.908Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
 [2025-07-05T14:28:55.910Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
 [2025-07-05T14:28:55.910Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:26.751Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:26.804Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:26.805Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:26.805Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:26.825Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:37.022Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:37.041Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:37.041Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:37.042Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:37.042Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:47.237Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:47.286Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:47.286Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:47.287Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:47.298Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:57.473Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:57.519Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:57.519Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:57.520Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:41:57.529Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:07.727Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:07.772Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:07.773Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:07.774Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:07.788Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:14.594Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:14.611Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:14.611Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:14.613Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:14.614Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.192Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.205Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.206Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.209Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.209Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.483Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.499Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.500Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.501Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.502Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.963Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.977Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.978Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.979Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:15.979Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.109Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.123Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.123Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.125Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.126Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.596Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.630Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.631Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.658Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:17.661Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.227Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.243Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.243Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.246Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.246Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.811Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.831Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.832Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.833Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:18.835Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:29.034Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:29.075Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:29.078Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:29.079Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:29.080Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:33.534Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:33.564Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:33.565Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:33.566Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:33.566Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:43.757Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:43.865Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:43.866Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:43.868Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:43.874Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:54.507Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:54.660Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:54.662Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:54.663Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:42:54.669Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:04.787Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:04.822Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:04.823Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:04.825Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:04.838Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:15.052Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:15.066Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:15.067Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:15.067Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:15.068Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:25.324Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:25.348Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:25.349Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:25.350Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:25.351Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:36.631Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:36.656Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:36.657Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:36.658Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:36.666Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:46.998Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:47.139Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:47.140Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:47.142Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:47.151Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:57.276Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:57.425Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:57.426Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:57.435Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:43:57.438Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:07.589Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:07.610Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:07.611Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:07.662Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:07.664Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:17.857Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:17.895Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:17.895Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:17.896Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:17.910Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:28.134Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:28.168Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:28.169Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:28.170Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:28.179Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:38.543Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:38.577Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:38.579Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:38.579Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:38.588Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:48.790Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:48.809Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:48.811Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:48.812Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:48.813Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:59.194Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:59.350Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:59.351Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:59.357Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:44:59.357Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:09.471Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:09.609Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:09.611Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:09.612Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:09.621Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:19.766Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:19.795Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:19.797Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:19.798Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:19.800Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:30.048Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:30.201Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:30.203Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:30.204Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:30.205Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:40.334Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:40.364Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:40.365Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:40.366Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:40.366Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:50.716Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:50.743Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:50.744Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:50.744Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:45:50.745Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:01.180Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:01.319Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:01.321Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:01.323Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:01.323Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:11.456Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:11.475Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:11.475Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:11.476Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:11.488Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:21.625Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:21.653Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:21.654Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:21.655Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:21.665Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:31.913Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:32.020Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:32.022Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:32.024Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:32.032Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:42.193Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:42.227Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:42.227Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:42.228Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:42.237Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:52.463Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:52.499Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:52.500Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:52.500Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:46:52.501Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:02.704Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:02.737Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:02.739Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:02.740Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:02.742Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:12.923Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:12.961Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:12.961Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:12.962Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:12.974Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:23.178Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:23.322Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:23.323Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:23.325Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:23.332Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:33.455Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:33.484Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:33.485Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:33.486Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:33.503Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:43.719Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:43.746Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:43.747Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:43.747Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:43.748Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:53.967Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:53.983Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:53.984Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:53.985Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:47:53.985Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:04.212Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:04.245Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:04.245Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:04.246Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:04.247Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:15.072Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:15.103Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:15.104Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:15.104Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:15.105Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:26.259Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:26.399Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:26.401Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:26.411Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:26.414Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:36.544Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:36.577Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:36.577Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:36.578Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:36.578Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:46.774Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:46.805Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:46.805Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:46.806Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:46.815Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:57.008Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:57.034Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:57.034Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:57.035Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:48:57.035Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:08.324Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:08.339Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:08.340Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:08.340Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:08.376Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:19.331Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:19.350Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:19.351Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:19.352Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:19.352Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:29.509Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:29.625Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:29.626Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:29.629Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:29.635Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:39.772Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:39.804Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:39.804Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:39.805Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:39.814Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:49.998Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:50.022Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:50.023Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:50.024Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:49:50.034Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:00.245Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:00.266Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:00.267Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:00.268Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:00.269Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:10.681Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:10.713Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:10.713Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:10.714Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:10.729Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:20.913Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:20.946Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:20.946Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:20.947Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:20.947Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:31.188Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:31.282Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:31.283Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:31.285Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:31.286Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:41.432Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:41.465Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:41.465Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:41.466Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:41.479Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:51.676Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:51.716Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:51.716Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:51.718Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:50:51.731Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:01.920Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:01.947Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:01.947Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:01.949Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:01.961Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:12.148Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:12.176Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:12.177Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:12.177Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:12.187Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:22.418Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:22.445Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:22.445Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:22.446Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:22.447Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:33.373Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:33.407Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:33.408Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:33.409Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:33.410Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:43.604Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:43.627Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:43.627Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:43.639Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:43.639Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:53.835Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:53.855Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:53.855Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:53.856Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:51:53.856Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:03.990Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:04.060Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:04.061Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:04.061Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:04.062Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:14.186Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:14.203Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:14.203Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:14.204Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:14.204Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:24.584Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:24.615Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:24.616Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:24.616Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:24.616Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:34.821Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:34.883Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:34.884Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:34.884Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:34.885Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:45.032Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:45.098Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:45.098Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:45.099Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:45.099Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:55.306Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:55.364Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:55.365Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:55.366Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:52:55.369Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:06.300Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:06.362Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:06.363Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:06.365Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:06.367Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:16.678Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:16.699Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:16.700Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:16.701Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:16.702Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:27.084Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:27.104Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:27.108Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:27.109Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:27.111Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:37.318Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:37.390Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:37.391Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:37.393Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:37.394Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:47.546Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:47.564Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:47.565Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:47.566Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:47.567Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:57.815Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:57.844Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:57.845Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:57.846Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:53:57.847Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:08.020Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:08.041Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:08.042Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:08.043Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:08.045Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:18.259Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:18.281Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:18.282Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:18.282Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:18.283Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:28.505Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:28.572Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:28.573Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:28.574Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T16:54:28.574Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0
+[2025-07-05T19:57:27.836Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:28.067Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:28.068Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:28.148Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:28.156Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:29.272Z] 192.168.100.62 - GET /apple-touch-icon-precomposed.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-07-05T19:57:29.312Z] 192.168.100.62 - GET /apple-touch-icon.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-07-05T19:57:29.313Z] 192.168.100.62 - GET /favicon.ico - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-07-05T19:57:32.588Z] 192.168.100.62 - GET /favicon.ico - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-07-05T19:57:32.590Z] 192.168.100.62 - GET /apple-touch-icon.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-07-05T19:57:32.591Z] 192.168.100.62 - GET /apple-touch-icon-precomposed.png - UA: com.apple.WebKit.Networking/20621.2.5.11.8 Network/4277.121.5 macOS/15.5
+[2025-07-05T19:57:33.348Z] 192.168.100.62 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-07-05T19:57:33.465Z] 192.168.100.62 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-07-05T19:57:34.113Z] 192.168.100.62 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-07-05T19:57:34.515Z] 192.168.100.62 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-07-05T19:57:37.042Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:37.160Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:37.255Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:37.257Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:37.260Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:37.555Z] 192.168.100.62 - GET /apple-touch-icon-precomposed.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-07-05T19:57:37.671Z] 192.168.100.62 - GET /apple-touch-icon.png - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Safari
+[2025-07-05T19:57:47.632Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:47.664Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:47.672Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:47.680Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:47.682Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:57.880Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:57.905Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:57.911Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:57.917Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:57:57.923Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:08.240Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:08.266Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:08.272Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:08.279Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:08.285Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:18.514Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:18.553Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:18.556Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:18.566Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:18.568Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:28.916Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:28.968Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:28.970Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:28.975Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:28.989Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:39.336Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:39.392Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:39.409Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:39.410Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:39.414Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:41.449Z] 192.168.100.62 - GET /api/emoji-map - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:41.475Z] 192.168.100.62 - GET /api/stats - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:41.490Z] 192.168.100.62 - GET /api/leaderboard - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:41.491Z] 192.168.100.62 - GET /api/recent - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
+[2025-07-05T19:58:41.511Z] 192.168.100.62 - GET /api/disciplines - UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15
