@@ -1,6 +1,6 @@
 # Schulolympiade Dashboard – Backend & Admin
 
-![Apple Style Feature Overview](/assets/images/README-Images/headerframe.png)
+![Apple Style Feature Overview](assets/images/README-Images/headerframe.png)
 
 Dieses Projekt ist ein vollständiges Dashboard- und Verwaltungssystem für eine Schulolympiade. Es besteht aus mehreren Services (Microservices), die alle auf eine zentrale MySQL-Datenbank zugreifen. Die Verwaltung und das Monitoring erfolgen über moderne Web-Oberflächen. Das System ist für Docker optimiert und kann einfach auf einem Server oder im lokalen Netzwerk betrieben werden.
 
