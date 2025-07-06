@@ -1,4 +1,4 @@
-# Schulolympiade Dashboard – Backend & Admin
+# Schulolympiade Dashboard
 
 ![Apple Style Feature Overview](assets/images/README-Images/headerframe.png)
 
