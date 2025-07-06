@@ -1,8 +1,6 @@
 # Schulolympiade Dashboard
 
----
-⚠️ Da wir das Backend von .json Dateien auf eine MySQL Datenbank umgestellt haben finden sich in den verschiedenen Services immer noch Code Abschnitte die entweder nicht genutzt werden oder auf MySQL angepasst wurden aber wir vergessen haben diese umzubenennen.
----
+> ⚠️ **Warning**: Da wir das Backend von `.json`-Dateien auf eine MySQL-Datenbank umgestellt haben, finden sich in den verschiedenen Services immer noch Codeabschnitte, die entweder nicht genutzt werden oder auf MySQL angepasst wurden, aber wir vergessen haben, diese umzubenennen.
 
 ![Apple Style Feature Overview](assets/images/README-Images/headerframe.png)
 
