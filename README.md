@@ -190,5 +190,12 @@ docker exec -it schulolympiade_mysql mysql -uolympiade_user -polympiade2025 schu
 ---
 
 ## Lizenz
+Copyright (c) 2025 BEGA Team (Otto-Nagel-Gymnasium)
 
-Dieses Projekt ist für schulische Zwecke gedacht. Für andere Einsatzzwecke bitte an den Autor wenden.
+Diese Software darf ohne ausdrückliche, schriftliche Genehmigung des Autors nicht verwendet, kopiert, verändert, verbreitet oder weitergegeben werden.
+
+Die Nutzung dieser Software für kommerzielle Zwecke oder zur Gewinnerzielung – direkt oder indirekt – ist ausdrücklich untersagt.
+
+Die Software wird "wie sie ist" bereitgestellt, ohne jegliche ausdrückliche oder implizite Garantie. Der Autor haftet nicht für Schäden, die durch die Nutzung der Software entstehen. Es besteht keine Verpflichtung zur Wartung, Fehlerbehebung oder Unterstützung.
+
+Durch das Herunterladen, Kopieren oder Verwenden der Software erklären Sie sich mit diesen Bedingungen einverstanden.
