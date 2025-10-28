@@ -22,12 +22,13 @@ class DataManager {
     constructor() {
         this.data = [];
         this.currentEditIndex = -1;
-        this.dataFile = '/data/emojiMap.json';
+        // Endpoint (bleibt als .json Pfad für Kompatibilität zum Server)
+        this.dataEndpoint = '/data/emojiMap.json';
     }
 
     async loadData() {
         try {
-            const response = await fetch(this.dataFile + '?t=' + Date.now());
+            const response = await fetch(this.dataEndpoint + '?t=' + Date.now());
             if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
             const jsonData = await response.json();
             if (!Array.isArray(jsonData)) throw new Error('JSON muss ein Array sein');
@@ -45,6 +46,18 @@ class DataManager {
 
     getData() {
         return [...this.data];
+    }
+
+    // Kleine Statistik für das Dashboard (verhält sich ähnlich wie das Data-Dashboard)
+    getStats() {
+        const totalMappings = this.data.length;
+        const lastUpdate = totalMappings > 0 ? (this.data[totalMappings - 1].Trigger || '--') : '--:--';
+        return {
+            teams: totalMappings,
+            disciplines: totalMappings,
+            avgPoints: 0,
+            lastUpdate
+        };
     }
 
     async updateEntry(index, newData) {
@@ -108,19 +121,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.btn.btn-secondary[onclick="reloadData()"]').addEventListener('click', reloadData);
 });
 
-function checkAuthentication() {
-    if (isAuthenticated()) {
-        showDashboard();
-    } else {
-        showLogin();
-    }
-}
-
-function logout() {
-    sessionStorage.removeItem('authToken');
-    showLogin();
-    document.getElementById('loginForm').reset();
-}
 
 function showLogin() {
     document.getElementById('loginSection').style.display = 'flex';
@@ -181,13 +181,6 @@ async function handleLogin(e) {
     loginSpinner.style.display = 'none';
     loginBtn.disabled = false;
 }
-
-function logout() {
-    sessionStorage.removeItem('authToken');
-    showLogin();
-    document.getElementById('loginForm').reset();
-}
-
 function updateDashboard() {
     updateStats();
     updateTable();

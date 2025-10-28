@@ -22,13 +22,14 @@ class DataManager {
     constructor() {
         this.data = [];
         this.currentEditIndex = -1;
-        this.dataFile = '/data/results.json';
+        // Endpoint (bleibt als .json Pfad für Kompatibilität zum Server)
+        this.dataEndpoint = '/data/results.json';
     }
 
     async loadData() {
         try {
             const token = sessionStorage.getItem('authToken') || '';
-            const response = await fetch(this.dataFile + '?t=' + Date.now(), {
+            const response = await fetch(this.dataEndpoint + '?t=' + Date.now(), {
                 headers: {
                     'Authorization': token
                 }
@@ -47,7 +48,7 @@ class DataManager {
                 }
             }
             this.data = jsonData;
-            console.log(`✅ ${jsonData.length} Einträge aus ${this.dataFile} geladen`);
+            console.log(`✅ ${jsonData.length} Einträge aus ${this.dataEndpoint} geladen`);
             return true;
         } catch (error) {
             console.error('❌ Fehler beim Laden der Daten:', error);
@@ -117,7 +118,6 @@ class DataManager {
 }
 
 // Globale Instanzen
-// const auth = new SecureAuth();   // <-- ENTFERNEN!
 const dataManager = new DataManager();
 
 // Event Listeners
@@ -128,19 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.btn.btn-secondary[onclick="reloadData()"]').addEventListener('click', reloadData);
 });
 
-function checkAuthentication() {
-    if (isAuthenticated()) {
-        showDashboard();
-    } else {
-        showLogin();
-    }
-}
-
-function logout() {
-    sessionStorage.removeItem('authToken');
-    showLogin();
-    document.getElementById('loginForm').reset();
-}
 
 function showLogin() {
     document.getElementById('loginSection').style.display = 'flex';
@@ -202,11 +189,6 @@ async function handleLogin(e) {
     loginBtn.disabled = false;
 }
 
-function logout() {
-    sessionStorage.removeItem('authToken');
-    showLogin();
-    document.getElementById('loginForm').reset();
-}
 
 function updateDashboard() {
     updateTable();

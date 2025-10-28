@@ -257,7 +257,7 @@ class OlympiadeDashboard {
         const errorMessage = `
             <div class="error-message">
                 <h3>⚠️ Verbindungsproblem</h3>
-                <p>Daten können nicht geladen werden. Überprüfen Sie die .json Dateien und den Server.</p>
+                <p>Daten können nicht geladen werden. Überprüfen Sie die API/Server-Verbindung.</p>
                 <button onclick="location.reload()">Seite neu laden</button>
             </div>
         `;
