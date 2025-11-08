@@ -3,31 +3,44 @@
  * Provides admin interface for managing competition results
  */
 const express = require('express');
-const crypto = require('crypto');
 const path = require('path');
 const { pool, testConnection, closePool } = require('../shared/db');
 const config = require('../shared/config');
 const Logger = require('../shared/logger');
-const { createAuthMiddleware, createErrorMiddleware } = require('../shared/middleware');
+const { 
+    createAuthMiddleware, 
+    createErrorMiddleware,
+    createRateLimitMiddleware,
+    createStrictRateLimitMiddleware 
+} = require('../shared/middleware');
+const { verifyPassword, generateToken, createPasswordHashFromEnv } = require('../shared/auth');
 
 const app = express();
 const PORT = config.ports.editData;
 const logger = new Logger('EditData', path.join(__dirname, '../dashboard/public/data/edit-data-logs.txt'));
 
-// Admin credentials hash
+// Admin credentials
 const ADMIN_USER = config.admin.username;
-const ADMIN_PASS_HASH = crypto.createHash('sha256').update(config.admin.password).digest('hex');
+let ADMIN_PASS_HASH;
 const validTokens = new Set();
+
+// Initialize password hash on startup
+(async () => {
+    ADMIN_PASS_HASH = await createPasswordHashFromEnv(config.admin.password);
+})();
 
 // Middleware
 app.use(express.json());
 app.use(express.static(__dirname));
 
+// Rate limiting for all routes
+app.use(createRateLimitMiddleware());
+
 /**
  * POST /api/login
  * Authenticate admin user and generate token
  */
-app.post('/api/login', async (req, res) => {
+app.post('/api/login', createStrictRateLimitMiddleware(), async (req, res) => {
     try {
         const { username, password } = req.body;
         
@@ -38,10 +51,9 @@ app.post('/api/login', async (req, res) => {
             });
         }
         
-        const hash = crypto.createHash('sha256').update(password).digest('hex');
-        
-        if (username === ADMIN_USER && hash === ADMIN_PASS_HASH) {
-            const token = crypto.randomBytes(32).toString('hex');
+        // Verify username and password
+        if (username === ADMIN_USER && await verifyPassword(password, ADMIN_PASS_HASH)) {
+            const token = generateToken();
             validTokens.add(token);
             await logger.info(`User ${username} logged in successfully`);
             res.json({ success: true, token });

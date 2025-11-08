@@ -7,7 +7,12 @@ const path = require('path');
 const { pool, testConnection, closePool } = require('../shared/db');
 const config = require('../shared/config');
 const Logger = require('../shared/logger');
-const { createCorsMiddleware, createLoggingMiddleware, createErrorMiddleware } = require('../shared/middleware');
+const { 
+    createCorsMiddleware, 
+    createLoggingMiddleware, 
+    createErrorMiddleware,
+    createRateLimitMiddleware 
+} = require('../shared/middleware');
 
 const app = express();
 const PORT = config.ports.dashboard;
@@ -18,6 +23,11 @@ app.use(express.static('public'));
 app.use(express.json());
 app.use(createCorsMiddleware(config.cors.allowedOrigins));
 app.use(createLoggingMiddleware(logger));
+app.use(createRateLimitMiddleware({
+    windowMs: 1 * 60 * 1000, // 1 minute
+    max: 60, // 60 requests per minute
+    message: 'Too many requests from this IP, please try again later.'
+}));
 
 /**
  * Retrieve and process data from the database

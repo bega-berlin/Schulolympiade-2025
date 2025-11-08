@@ -3,6 +3,36 @@
  * Provides reusable middleware functions for Express applications
  */
 const Logger = require('./logger');
+const rateLimit = require('express-rate-limit');
+
+/**
+ * Create rate limiting middleware
+ * @param {Object} options - Rate limit options
+ * @returns {Function} Express middleware function
+ */
+function createRateLimitMiddleware(options = {}) {
+    const defaults = {
+        windowMs: 15 * 60 * 1000, // 15 minutes
+        max: 100, // Limit each IP to 100 requests per windowMs
+        message: 'Too many requests from this IP, please try again later.',
+        standardHeaders: true,
+        legacyHeaders: false,
+    };
+    
+    return rateLimit({ ...defaults, ...options });
+}
+
+/**
+ * Create strict rate limiting for sensitive endpoints
+ * @returns {Function} Express middleware function
+ */
+function createStrictRateLimitMiddleware() {
+    return createRateLimitMiddleware({
+        windowMs: 15 * 60 * 1000, // 15 minutes
+        max: 5, // Limit to 5 requests per 15 minutes
+        message: 'Too many attempts, please try again later.',
+    });
+}
 
 /**
  * Create CORS middleware
@@ -77,5 +107,7 @@ module.exports = {
     createCorsMiddleware,
     createLoggingMiddleware,
     createErrorMiddleware,
-    createAuthMiddleware
+    createAuthMiddleware,
+    createRateLimitMiddleware,
+    createStrictRateLimitMiddleware
 };
