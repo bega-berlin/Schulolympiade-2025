@@ -291,16 +291,36 @@ docker-compose restart dashboard edit_data edit_emoji
    - `ADMIN_PASSWORD`
 
 2. **Use strong passwords**: Mix of uppercase, lowercase, numbers, and symbols
+   - Minimum 12 characters recommended
+   - Avoid common words or patterns
+   - Passwords are automatically hashed using bcrypt (10 rounds)
 
 3. **Restrict database access**:
    - Change `DB_HOST` to bind only to specific IP
    - Use firewall rules to restrict port access
+   - Never expose MySQL port to public internet
 
 4. **Enable HTTPS**: Use a reverse proxy (nginx) with SSL certificates
 
 5. **Regular backups**: Verify backups are working and test restoration
 
 6. **Update regularly**: Keep Docker images and code up to date
+
+7. **Rate Limiting**: The application includes automatic rate limiting:
+   - Dashboard API: 60 requests/minute per IP
+   - Edit dashboards: 100 requests/15 minutes per IP
+   - Login endpoints: 5 requests/15 minutes per IP (strict)
+   
+8. **Monitor logs**: Regularly check logs for suspicious activity
+   ```bash
+   docker-compose logs -f | grep -i "failed\|error\|unauthorized"
+   ```
+
+9. **Secure tokens**: Authentication tokens are cryptographically secure (32 bytes)
+   - Tokens expire on server restart
+   - Consider implementing token expiration for production
+
+10. **Input validation**: All user inputs are validated before processing
 
 ### Performance Optimization
 
