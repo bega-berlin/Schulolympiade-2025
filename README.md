@@ -1,6 +1,7 @@
 # Schulolympiade Dashboard
 
-> ⚠️ **Warning**: Da wir das Backend von `.json`-Dateien auf eine MySQL-Datenbank umgestellt haben, finden sich in den verschiedenen Services immer noch Codeabschnitte, die entweder nicht genutzt werden oder auf MySQL angepasst wurden, aber wir vergessen haben, diese umzubenennen.
+> ✨ **Neu**: Das System wurde vollständig refactoriert und ist jetzt einfach mit Docker deploybar! Siehe [DOCKER_SETUP.md](DOCKER_SETUP.md) für detaillierte Anweisungen.
+
 ---
 
 ![Apple Style Feature Overview](assets/images/README-Images/header-overview-apple-style.png)
@@ -9,12 +10,38 @@ Dieses Projekt ist ein vollständiges Dashboard- und Verwaltungssystem für eine
 
 ---
 
+## Quick Start mit Docker
+
+```bash
+# Repository klonen
+git clone https://github.com/bega-berlin/Schulolympiade-2025.git
+cd Schulolympiade-2025
+
+# Umgebungsvariablen konfigurieren
+cp .env.example .env
+# Bearbeite .env und ändere Passwörter!
+
+# Services starten
+docker-compose up -d --build
+
+# Status prüfen
+docker-compose ps
+
+# Dashboard öffnen
+# http://localhost:3000
+```
+
+Siehe [DOCKER_SETUP.md](DOCKER_SETUP.md) für vollständige Anweisungen.
+
+---
+
 ## Inhaltsverzeichnis
 
 - [Features](#features)
+- [Quick Start](#quick-start-mit-docker)
 - [Projektstruktur](#projektstruktur)
 - [Services & Komponenten](#services--komponenten)
-- [Datenbank](#datenbank)
+- [Konfiguration](#konfiguration)
 - [Docker & Backups](#docker--backups)
 - [Sicherheit](#sicherheit)
 - [Nützliche Kommandos](#nützliche-kommandos)
@@ -31,7 +58,10 @@ Dieses Projekt ist ein vollständiges Dashboard- und Verwaltungssystem für eine
 - **Automatische Datenbank-Backups** (Docker-basiert)
 - **IP-Logging** für bestimmte Aktionen
 - **REST-API** für Frontend und externe Tools
-- **Docker-Compose** für einfachen Betrieb
+- **Vollständig containerisiert** mit Docker & Docker Compose
+- **Umgebungsvariablen** für einfache Konfiguration
+- **Zentralisiertes Logging** für alle Services
+- **Health Checks** für alle Services
 - **phpMyAdmin & CloudBeaver** für DB-Management
 
 ---
@@ -39,7 +69,7 @@ Dieses Projekt ist ein vollständiges Dashboard- und Verwaltungssystem für eine
 ## Projektstruktur
 
 ```
-schulolympiade-mysql/
+schulolympiade-2025/
 │
 ├── dashboard/                # Haupt-Dashboard (Frontend & Backend)
 │   ├── public/               # Statische Dateien (HTML, JS, CSS)
@@ -64,20 +94,20 @@ schulolympiade-mysql/
 ├── ip-logging/               # IP-Logging-Service
 │   └── server.js
 │
-├── shared/                   # Gemeinsame Module (z.B. DB)
-│   └── db.js
+├── shared/                   # Gemeinsame Module
+│   ├── config.js             # Zentrale Konfiguration
+│   ├── db.js                 # Datenbankverbindung
+│   ├── logger.js             # Logging-Utility
+│   └── middleware.js         # Express Middleware
 │
-├── docker/                   # Docker-Setup
-│   ├── docker-compose.yaml
+├── docker/                   # Docker-Daten
 │   ├── mysql-backups/        # Backup-Ordner (wird automatisch befüllt)
 │   └── mysql-init/           # SQL-Init-Skripte
 │
-├── docker-nginx/             # Reverse Proxy (optional)
-│   └── docker-compose.yaml
-│
-├── docker-n8n/               # Automatisierung (optional)
-│   └── n8n-compose.yaml
-│
+├── Dockerfile                # Docker Image Definition
+├── docker-compose.yml        # Service Orchestrierung
+├── .env.example              # Umgebungsvariablen Template
+├── DOCKER_SETUP.md           # Detaillierte Docker-Anleitung
 └── README.md                 # Diese Datei
 ```
 
@@ -107,76 +137,122 @@ schulolympiade-mysql/
 ### 5. IP-Logging (`ip-logging/`)
 - **Backend:** HTTP-Server, der IP-Adressen und Zeitstempel in eine Datei schreibt und weiterleitet.
 
-### 6. Gemeinsame Datenbankanbindung (`shared/db.js`)
-- **MySQL Connection Pool** für alle Services.
-- **Testfunktion** für DB-Verbindung.
+### 6. Gemeinsame Module (`shared/`)
+- **config.js:** Zentrale Konfiguration aus Umgebungsvariablen
+- **db.js:** MySQL Connection Pool mit Retry-Logik
+- **logger.js:** Zentralisiertes Logging für alle Services
+- **middleware.js:** Wiederverwendbare Express Middleware (CORS, Auth, Logging, Fehlerbehandlung)
+
+---
+
+## Konfiguration
+
+Das System wird vollständig über Umgebungsvariablen konfiguriert. Kopiere `.env.example` zu `.env` und passe die Werte an:
+
+```bash
+cp .env.example .env
+```
+
+Wichtige Einstellungen:
+
+- **Database**: `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`
+- **Ports**: `DASHBOARD_PORT`, `EDIT_DATA_PORT`, etc.
+- **Admin**: `ADMIN_USERNAME`, `ADMIN_PASSWORD` (⚠️ Ändern!)
+- **Backups**: `BACKUP_CRON_TIME`, `BACKUP_MAX_COUNT`
+
+Siehe [DOCKER_SETUP.md](DOCKER_SETUP.md) für Details.
 
 ---
 
 ## Datenbank
 
 - **MySQL 8** (Docker)
-- **Tabellen:** `results`, `emoji_mappings` (und ggf. weitere)
-- **User:** `olympiade_user`
-- **Passwort:** Siehe `.env` oder `docker-compose.yaml`
-- **Init-Skripte:** Im Ordner `docker/mysql-init/` (werden beim ersten Start ausgeführt)
+- **Tabellen:** `results`, `emoji_mappings`
+- **User:** Konfigurierbar via `.env`
+- **Init-Skripte:** Im Ordner `docker/mysql-init/`
 
 ---
 
 ## Docker & Backups
 
-### Starten aller Services
+### Schnellstart
 
 ```bash
-cd docker
-docker compose up -d
+# Services starten
+docker-compose up -d
+
+# Status prüfen
+docker-compose ps
+
+# Logs anzeigen
+docker-compose logs -f
+
+# Services stoppen
+docker-compose down
 ```
 
-### Datenbank-Backups
+### Backups
 
-- **Automatisch:** Das Service `mysql_backup` (Image: `fradelg/mysql-cron-backup`) erstellt alle 10 Minuten ein Backup der Datenbank im Ordner `docker/mysql-backups/`.
-- **Backup-Intervalle:** Über die Umgebungsvariable `CRON_TIME` einstellbar.
-- **Backup-Ordner:** `docker/mysql-backups/` (auf dem Host, einfach kopierbar)
-- **Maximale Backups:** Über `MAX_BACKUPS` einstellbar.
+Automatische Backups werden alle 10 Minuten erstellt (konfigurierbar):
+- **Speicherort:** `docker/mysql-backups/`
+- **Anzahl:** Letzten 10 Backups (konfigurierbar)
 
-### Datenbank-Management
+Manuelles Backup:
+```bash
+docker exec schulolympiade_mysql mysqldump -u olympiade_user -polympiade2025 schulolympiade > backup.sql
+```
 
-- **phpMyAdmin:** [http://192.168.100.73:8080](http://192.168.100.73:8080)
-- **CloudBeaver:** [http://localhost:8081](http://localhost:8081)
+Siehe [DOCKER_SETUP.md](DOCKER_SETUP.md) für weitere Details.
 
 ---
 
 ## Sicherheit
 
-- **Admin-Panels:** Login mit Benutzername & Passwort, Token-basiert (kein OAuth).
-- **Datenbank:** Kein Root-Zugriff von außen, nur dedizierter User.
-- **Backups:** Werden im Host-Ordner gespeichert, Zugriff nur für berechtigte Nutzer.
-- **CORS:** Nur lokale Zugriffe erlaubt (anpassbar in `server.js`).
+⚠️ **Wichtig:** Ändern Sie alle Standard-Passwörter in der `.env` Datei!
+
+- **Admin-Panels:** Login mit Benutzername & Passwort, Token-basiert
+- **Datenbank:** Kein Root-Zugriff von außen, nur dedizierter User
+- **Backups:** Werden im Host-Ordner gespeichert
+- **CORS:** Konfigurierbar über Umgebungsvariablen
+- **Input-Validierung:** Alle Eingaben werden validiert
+- **Error Handling:** Sichere Fehlerbehandlung ohne Offenlegung sensibler Daten
+
+Siehe [DOCKER_SETUP.md](DOCKER_SETUP.md) für Security Best Practices.
 
 ---
 
 ## Nützliche Kommandos
 
-**Alle Container starten/stoppen:**
+**Container verwalten:**
 ```bash
-docker compose up -d
-docker compose down
+docker-compose up -d           # Starten
+docker-compose down            # Stoppen
+docker-compose restart         # Neustarten
+docker-compose ps              # Status prüfen
 ```
 
-**Logs anzeigen:**
+**Logs:**
 ```bash
-docker compose logs -f
+docker-compose logs -f         # Alle Logs
+docker-compose logs dashboard  # Specific service
 ```
 
-**Backup manuell auslesen:**
+**Datenbank:**
 ```bash
-ls docker/mysql-backups/
+# In MySQL Shell
+docker exec -it schulolympiade_mysql mysql -u olympiade_user -polympiade2025 schulolympiade
+
+# Backup erstellen
+docker exec schulolympiade_mysql mysqldump -u olympiade_user -p schulolympiade > backup.sql
 ```
 
-**In die Datenbank einloggen:**
+**Nach Code-Änderungen:**
 ```bash
-docker exec -it schulolympiade_mysql mysql -uolympiade_user -polympiade2025 schulolympiade
+docker-compose down
+docker-compose up -d --build
 ```
+
+Vollständige Liste in [DOCKER_SETUP.md](DOCKER_SETUP.md).
 
 ---
 
