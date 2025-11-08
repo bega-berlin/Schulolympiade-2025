@@ -1,50 +1,28 @@
-// HAUPT-DASHBOARD SERVER - Angepasst für MySQL
+/**
+ * Main Dashboard Server
+ * Provides API endpoints for the School Olympics dashboard
+ */
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
-const { pool, testConnection } = require('../shared/db'); // Datenbankverbindung aus db.js
+const { pool, testConnection, closePool } = require('../shared/db');
+const config = require('../shared/config');
+const Logger = require('../shared/logger');
+const { createCorsMiddleware, createLoggingMiddleware, createErrorMiddleware } = require('../shared/middleware');
 
 const app = express();
-const PORT = 3000; // Port für Dashboard -> Todo: Alle Ports der Services hochzählend ab 3000 stellen
+const PORT = config.ports.dashboard;
+const logger = new Logger('Dashboard', path.join(__dirname, config.logging.filePath));
 
+// Middleware setup
+app.use(express.static('public'));
+app.use(express.json());
+app.use(createCorsMiddleware(config.cors.allowedOrigins));
+app.use(createLoggingMiddleware(logger));
 
-app.use(express.static('public')); // Statisches Zeug für index.html und Bilder und so
-app.use(express.json()); // Er ist nur für Post Anfragen also brauchen wir nicht. Ich lass trotzdem mal drin weil jetzt aktell alles Läuft und ich nichts riskieren will
-
-// CORS
-const allowedOrigins = ['http://localhost', 'http://localhost:3000'];
-app.use((req, res, next) => {
-    const origin = req.headers.origin;
-    if (allowedOrigins.includes(origin)) {
-        res.header('Access-Control-Allow-Origin', origin);
-    }
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    next();
-});
-
-// IP-Logging Middleware (bleibt JSON-basiert wie gewünscht)
-app.use((req, res, next) => {
-    const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown IP';
-    const now = new Date().toISOString();
-    const method = req.method;
-    const url = req.originalUrl;
-    const userAgent = req.headers['user-agent'] || 'unknown UA';
-
-    const logLine = `[${now}] ${ip} - ${method} ${url} - UA: ${userAgent}\n`;
-
-    console.log(logLine.trim());
-
-    const logFilePath = "/home/regie/schulolympiade/dashboard/public/data/api-logs.txt";
-    fs.appendFile(logFilePath, logLine, (err) => {
-        if (err) {
-            console.error('Fehler beim Schreiben in api-logs.txt:', err);
-        }
-    });
-
-    next();
-});
-
-// Daten aus MySQL abrufen und verarbeiten
+/**
+ * Retrieve and process data from the database
+ * @returns {Promise<Object>} Processed data including leaderboard, disciplines, and recent results
+ */
 async function getProcessedData() {
     try {
         // Alle Ergebnisse abrufen
@@ -133,8 +111,105 @@ async function getProcessedData() {
     }
 }
 
-// API-Endpunkte
-app.get('/api/stats', async (req, res) => {
+/**
+ * Retrieve and process data from the database
+ * @returns {Promise<Object>} Processed data including leaderboard, disciplines, and recent results
+ */
+async function getProcessedData() {
+    try {
+        // Fetch all results from database
+        const [results] = await pool.execute(
+            'SELECT team, disziplin, punkte, platz, TIME_FORMAT(uhr, "%H:%i:%s") as uhr FROM results ORDER BY uhr DESC'
+        );
+
+        // Calculate team statistics
+        const teamScores = {};
+        const disciplineStats = {};
+
+        results.forEach(row => {
+            // Collect team data
+            if (!teamScores[row.team]) {
+                teamScores[row.team] = {
+                    name: row.team,
+                    totalPoints: 0,
+                    events: 0,
+                    avgPlace: 0,
+                    places: []
+                };
+            }
+
+            teamScores[row.team].totalPoints += row.punkte;
+            teamScores[row.team].events++;
+            teamScores[row.team].places.push(row.platz);
+
+            // Collect discipline data
+            if (!disciplineStats[row.disziplin]) {
+                disciplineStats[row.disziplin] = {
+                    name: row.disziplin,
+                    participants: new Set(),
+                    totalPoints: 0,
+                    events: 0
+                };
+            }
+
+            disciplineStats[row.disziplin].participants.add(row.team);
+            disciplineStats[row.disziplin].totalPoints += row.punkte;
+            disciplineStats[row.disziplin].events++;
+        });
+
+        // Calculate average places
+        Object.values(teamScores).forEach(team => {
+            if (team.places.length > 0) {
+                team.avgPlace = team.places.reduce((a, b) => a + b, 0) / team.places.length;
+            }
+        });
+
+        // Create leaderboard
+        const leaderboard = Object.values(teamScores)
+            .sort((a, b) => b.totalPoints - a.totalPoints)
+            .map((team, index) => ({
+                ...team,
+                rank: index + 1
+            }));
+
+        // Format discipline statistics
+        const disciplines = Object.values(disciplineStats).map(d => ({
+            name: d.name,
+            participants: d.participants.size,
+            avgPoints: d.events > 0 ? (d.totalPoints / d.events).toFixed(1) : 0,
+            totalEvents: d.events
+        }));
+
+        // Get recent results (already sorted by time)
+        const recentResults = results.slice(0, 10).map(r => ({
+            team: r.team,
+            discipline: r.disziplin,
+            points: r.punkte,
+            place: r.platz,
+            time: r.uhr
+        }));
+
+        return {
+            teams: Object.keys(teamScores),
+            disciplines,
+            totalParticipants: Object.keys(teamScores).length,
+            totalEvents: results.length,
+            leaderboard,
+            recentResults
+        };
+    } catch (error) {
+        await logger.error('Error fetching processed data', error);
+        throw error;
+    }
+}
+
+// API Endpoints
+
+/**
+ * GET /api/stats
+ * Returns overall statistics
+ */
+app.get('/api/stats', async (req, res, next) => {
     try {
         const data = await getProcessedData();
         res.json({
@@ -144,62 +219,91 @@ app.get('/api/stats', async (req, res) => {
             lastUpdate: new Date().toLocaleString('de-DE')
         });
     } catch (error) {
-        res.status(500).json({ error: 'Datenbankfehler' });
+        next(error);
     }
 });
 
-app.get('/api/leaderboard', async (req, res) => {
+/**
+ * GET /api/leaderboard
+ * Returns the team leaderboard
+ */
+app.get('/api/leaderboard', async (req, res, next) => {
     try {
         const data = await getProcessedData();
         res.json(data.leaderboard);
     } catch (error) {
-        res.status(500).json({ error: 'Datenbankfehler' });
+        next(error);
     }
 });
 
-app.get('/api/disciplines', async (req, res) => {
+/**
+ * GET /api/disciplines
+ * Returns discipline statistics
+ */
+app.get('/api/disciplines', async (req, res, next) => {
     try {
         const data = await getProcessedData();
         res.json(data.disciplines);
     } catch (error) {
-        res.status(500).json({ error: 'Datenbankfehler' });
+        next(error);
     }
 });
 
-app.get('/api/recent', async (req, res) => {
+/**
+ * GET /api/recent
+ * Returns the most recent results
+ */
+app.get('/api/recent', async (req, res, next) => {
     try {
         const data = await getProcessedData();
         res.json(data.recentResults);
     } catch (error) {
-        res.status(500).json({ error: 'Datenbankfehler' });
+        next(error);
     }
 });
 
-app.get('/api/emoji-map', async (req, res) => {
+/**
+ * GET /api/emoji-map
+ * Returns emoji mappings for disciplines
+ */
+app.get('/api/emoji-map', async (req, res, next) => {
     try {
         const [rows] = await pool.execute(
             'SELECT emoji, trigger_word FROM emoji_mappings'
         );
         res.json(rows);
     } catch (error) {
-        console.error('Fehler beim Abrufen der Emoji-Map:', error);
+        await logger.error('Error fetching emoji map', error);
         res.json([]);
     }
 });
 
-// Server starten
+// Error handling middleware (must be last)
+app.use(createErrorMiddleware(logger));
+
+// Start server
 app.listen(PORT, '0.0.0.0', async () => {
-    console.log(`🚀 Dashboard läuft auf http://localhost:${PORT}`);
+    console.log(`🚀 Dashboard server running on http://localhost:${PORT}`);
+    await logger.info(`Dashboard server started on port ${PORT}`);
     
-    // Datenbankverbindung testen
+    // Test database connection
     const dbConnected = await testConnection();
     if (!dbConnected) {
-        console.error('⚠️ Dashboard läuft, aber keine Datenbankverbindung!');
+        await logger.warn('Dashboard running but no database connection');
     }
 });
 
-process.on('SIGINT', () => {
-    console.log('\n🛑 Server wird beendet...');
-    pool.end();
+// Graceful shutdown
+process.on('SIGINT', async () => {
+    console.log('\n🛑 Shutting down server...');
+    await logger.info('Server shutting down');
+    await closePool();
+    process.exit(0);
+});
+
+process.on('SIGTERM', async () => {
+    console.log('\n🛑 Shutting down server...');
+    await logger.info('Server shutting down');
+    await closePool();
     process.exit(0);
 });

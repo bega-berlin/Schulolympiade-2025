@@ -1,0 +1,238 @@
+version: '3.8'
+
+services:
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: schulolympiade_mysql
+    restart: always
+    ports:
+      - "${DB_HOST:-192.168.100.73}:${MYSQL_HOST_PORT:-3308}:${MYSQL_CONTAINER_PORT:-3306}"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-ong2025secure}
+      MYSQL_DATABASE: ${DB_NAME:-schulolympiade}
+      MYSQL_USER: ${DB_USER:-olympiade_user}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-olympiade2025}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./docker/mysql-init:/docker-entrypoint-initdb.d
+    networks:
+      - olympiade_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-ong2025secure}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # MySQL Backup Service
+  mysql_backup:
+    image: fradelg/mysql-cron-backup
+    container_name: mysql_backup
+    restart: always
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_PORT=${MYSQL_CONTAINER_PORT:-3306}
+      - MYSQL_USER=${DB_USER:-olympiade_user}
+      - MYSQL_PASS=${DB_PASSWORD:-olympiade2025}
+      - MYSQL_DB=${DB_NAME:-schulolympiade}
+      - CRON_TIME=${BACKUP_CRON_TIME:-*/10 * * * *}
+      - MAX_BACKUPS=${BACKUP_MAX_COUNT:-10}
+      - TZ=${BACKUP_TIMEZONE:-Europe/Berlin}
+    volumes:
+      - ./docker/mysql-backups:/backup
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - olympiade_network
+
+  # Dashboard Service
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulolympiade_dashboard
+    restart: always
+    ports:
+      - "${DASHBOARD_PORT:-3000}:${DASHBOARD_PORT:-3000}"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=mysql
+      - DB_PORT=${MYSQL_CONTAINER_PORT:-3306}
+      - DB_USER=${DB_USER:-olympiade_user}
+      - DB_PASSWORD=${DB_PASSWORD:-olympiade2025}
+      - DB_NAME=${DB_NAME:-schulolympiade}
+      - DASHBOARD_PORT=${DASHBOARD_PORT:-3000}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-http://localhost,http://localhost:3000}
+    volumes:
+      - ./dashboard:/app/dashboard:ro
+      - dashboard_logs:/app/dashboard/public/data
+    command: node dashboard/server.js
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - olympiade_network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:${DASHBOARD_PORT:-3000}/api/stats', (r) => {if (r.statusCode === 200) process.exit(0); process.exit(1)}).on('error', () => process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Edit Data Dashboard Service
+  edit_data:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulolympiade_edit_data
+    restart: always
+    ports:
+      - "${EDIT_DATA_PORT:-3003}:${EDIT_DATA_PORT:-3003}"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=mysql
+      - DB_PORT=${MYSQL_CONTAINER_PORT:-3306}
+      - DB_USER=${DB_USER:-olympiade_user}
+      - DB_PASSWORD=${DB_PASSWORD:-olympiade2025}
+      - DB_NAME=${DB_NAME:-schulolympiade}
+      - EDIT_DATA_PORT=${EDIT_DATA_PORT:-3003}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-DauView25}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-ongOlympiade#2025}
+    volumes:
+      - ./edit-data-dashboard:/app/edit-data-dashboard:ro
+      - dashboard_logs:/app/dashboard/public/data
+    command: node edit-data-dashboard/server.js
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - olympiade_network
+
+  # Edit Emoji Dashboard Service
+  edit_emoji:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulolympiade_edit_emoji
+    restart: always
+    ports:
+      - "${EDIT_EMOJI_PORT:-3004}:${EDIT_EMOJI_PORT:-3004}"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=mysql
+      - DB_PORT=${MYSQL_CONTAINER_PORT:-3306}
+      - DB_USER=${DB_USER:-olympiade_user}
+      - DB_PASSWORD=${DB_PASSWORD:-olympiade2025}
+      - DB_NAME=${DB_NAME:-schulolympiade}
+      - EDIT_EMOJI_PORT=${EDIT_EMOJI_PORT:-3004}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-DauView25}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-ongOlympiade#2025}
+    volumes:
+      - ./edit-emoji-dashboard:/app/edit-emoji-dashboard:ro
+      - dashboard_logs:/app/dashboard/public/data
+    command: node edit-emoji-dashboard/server.js
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - olympiade_network
+
+  # Success Emoji Service
+  success_emoji:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulolympiade_success_emoji
+    restart: always
+    ports:
+      - "${SUCCESS_EMOJI_PORT:-3005}:${SUCCESS_EMOJI_PORT:-3005}"
+    environment:
+      - NODE_ENV=production
+      - SUCCESS_EMOJI_PORT=${SUCCESS_EMOJI_PORT:-3005}
+    volumes:
+      - ./success-emoji:/app/success-emoji:ro
+      - dashboard_logs:/app/dashboard/public/data
+    command: node success-emoji/server.js
+    networks:
+      - olympiade_network
+
+  # Success Event Service
+  success_event:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulolympiade_success_event
+    restart: always
+    ports:
+      - "${SUCCESS_EVENT_PORT:-3006}:${SUCCESS_EVENT_PORT:-3006}"
+    environment:
+      - NODE_ENV=production
+      - SUCCESS_EVENT_PORT=${SUCCESS_EVENT_PORT:-3006}
+    volumes:
+      - ./success-event:/app/success-event:ro
+      - dashboard_logs:/app/dashboard/public/data
+    command: node success-event/server.js
+    networks:
+      - olympiade_network
+
+  # IP Logging Service
+  ip_logging:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulolympiade_ip_logging
+    restart: always
+    ports:
+      - "${IP_LOGGING_PORT:-3007}:${IP_LOGGING_PORT:-3007}"
+    environment:
+      - NODE_ENV=production
+      - IP_LOGGING_PORT=${IP_LOGGING_PORT:-3007}
+      - FORMULAR_URL=${FORMULAR_URL:-http://192.168.100.73:5678/form/e1d1b9c8-f46f-4ca8-8061-f0a317e1964e}
+    volumes:
+      - ./ip-logging:/app/ip-logging
+      - dashboard_logs:/app/dashboard/public/data
+    command: node ip-logging/server.js
+    networks:
+      - olympiade_network
+
+  # phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: schulolympiade_phpmyadmin
+    restart: always
+    ports:
+      - "${DB_HOST:-192.168.100.73}:${PHPMYADMIN_PORT:-8080}:80"
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: ${MYSQL_CONTAINER_PORT:-3306}
+      PMA_USER: ${DB_USER:-olympiade_user}
+      PMA_PASSWORD: ${DB_PASSWORD:-olympiade2025}
+    networks:
+      - olympiade_network
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # CloudBeaver
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: schulolympiade_cloudbeaver
+    restart: unless-stopped
+    ports:
+      - "${CLOUDBEAVER_PORT:-8081}:8978"
+    volumes:
+      - cloudbeaver_data:/opt/cloudbeaver/workspace
+    networks:
+      - olympiade_network
+
+volumes:
+  mysql_data:
+    driver: local
+  cloudbeaver_data:
+    driver: local
+  dashboard_logs:
+    driver: local
+
+networks:
+  olympiade_network:
+    driver: bridge

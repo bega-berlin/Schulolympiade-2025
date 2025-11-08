@@ -1,12 +1,34 @@
+/**
+ * Success Emoji Server
+ * Displays success page after emoji submission
+ */
 const express = require('express');
-const app = express();
-const port = 3002;
+const path = require('path');
+const config = require('../shared/config');
+const Logger = require('../shared/logger');
 
-// Statischer Ordner, z. B. für HTML-Dateien
+const app = express();
+const PORT = config.ports.successEmoji;
+const logger = new Logger('SuccessEmoji', path.join(__dirname, '../dashboard/public/data/success-emoji-logs.txt'));
+
+// Serve static files
 app.use(express.static('public'));
 
-// Starte Server auf allen Netzwerk-Interfaces (nicht nur localhost)
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server läuft auf http://localhost:${port}`);
-  console.log(`Oder im Netzwerk z. B. unter http://192.168.100.73:${port}`);
+// Start server
+app.listen(PORT, '0.0.0.0', async () => {
+    console.log(`✅ Success Emoji page running on http://localhost:${PORT}`);
+    await logger.info(`Success Emoji server started on port ${PORT}`);
+});
+
+// Graceful shutdown
+process.on('SIGINT', async () => {
+    console.log('\n🛑 Shutting down server...');
+    await logger.info('Server shutting down');
+    process.exit(0);
+});
+
+process.on('SIGTERM', async () => {
+    console.log('\n🛑 Shutting down server...');
+    await logger.info('Server shutting down');
+    process.exit(0);
 });

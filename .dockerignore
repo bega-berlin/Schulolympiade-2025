@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+dashboard/public/data/*.txt
+dashboard/public/data/*.log
+ip-logging/ip_log.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Docker
+docker/mysql-backups/
+docker/mysql-data/
+
+# Build files
+dist/
+build/
+*.tgz
+
+# Test files
+test/
+*.test.js
+coverage/
+
+# Documentation (keep README)
+*.md
+!README.md
+
+# Backup files
+*.bak
+*.backup
